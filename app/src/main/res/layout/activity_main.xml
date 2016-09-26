@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="AudioBinding" />
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/fotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/videoId"
+            android:layout_alignLeft="@+id/audioId"
+            android:layout_alignStart="@+id/audioId"
+            android:layout_marginBottom="60dp"
+            android:text="Foto" />
+
+        <Button
+            android:id="@+id/audioId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="194dp"
+            android:text="Audio" />
+
+        <Button
+            android:id="@+id/videoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/audioId"
+            android:layout_alignRight="@+id/audioId"
+            android:layout_below="@+id/audioId"
+            android:layout_marginTop="18dp"
+            android:text="Video" />
+
+        <Button
+            android:id="@+id/arquivoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/fotoId"
+            android:layout_alignLeft="@+id/fotoId"
+            android:layout_alignStart="@+id/fotoId"
+            android:layout_marginBottom="10dp"
+            android:text="Arquivo" />
+    </RelativeLayout>
+</layout>
